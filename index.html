@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Criar Sites</title>
+</head>
+
+<body>
+    <header>
+        <a class="link" href="https://mail.google.com/mail/?view=cm&fs=1&to=leviluizmodesto@gmail.com"
+            target="_blank">Gmail</a>
+        <a class="link" href="https://wa.me/5561983392121" target="_blank">WhatsApp</a>
+        <button class="link" id="salvar" onclick="finalizar()">Salvar</button>
+        <button class="link" onclick="limpar()">Limpar</button>
+        <a href="ajuda.html" class="link">Ajuda</a>
+        <button class="link" onclick="salvar()">Finalizar</button>
+    </header>
+    <div class="principal">
+        <main></main>
+    </div>
+    <div class="control">
+        <div class="abas">
+            <button class="botao" onclick="parte1()">Escrever</button>
+            <button class="botao" onclick="parte2()">Adicionar Elemento</button>
+            <button class="botao" onclick="parte3()">Fundo</button>
+            <button class="botao" onclick="parte4()">Personalizar Elementos</button>
+        </div>
+
+        <div class="partes">
+            <div id="um">
+                <div class="opcoes">
+                    <div class="button"><button onclick="escrever()" class="opcao">Escrever</button></div>
+                    <input type="text" id="texto" placeholder="Texto" class="opcao">
+                </div>
+            </div>
+            <div id="2">
+                <div class="opcoes">
+                    <div class="button"><button onclick="adicionar()" class="opcao">Adicionar</button></div>
+                    <input id="add" class="opcao" type="text" placeholder="Elemento">
+                    <input id="link" class="opcao" type="text" placeholder="Link">
+                </div>
+            </div>
+            <div id="3">
+                <div class="opcoes">
+                    <div class="button"><button class="opcao" onclick="fundo()">Aplicar</button></div>
+                    <input class="opcao" id="cor1" type="text" placeholder="Cor">
+                    <input type="text" id="cor2" class="opcao" placeholder="Cor 2">
+                </div>
+            </div>
+            <div id="4">
+                <div class="opcoes">
+                    <div class="button"><button class="opcao" onclick="personalizar()">Personalizar</button></div>
+                    <input class="opcao" id="element" type="text" placeholder="Elemento">
+                    <input class="opcao" id="num" type="text" placeholder="Nº do Elemento">
+                    <input type="text" id="tipo" placeholder="Tipo" class="opcao">
+                    <input type="number" class="opcao" placeholder="Largura" id="width">
+                    <input type="number" class="opcao" placeholder="Altura" id="height">
+                    <input type="text" class="opcao" placeholder="Posição" id="position">
+                    <input type="number" class="opcao" placeholder="Cima" id="top">
+                    <input type="number" class="opcao" placeholder="Baixo" id="bottom">
+                    <input type="number" class="opcao" placeholder="Direita" id="right">
+                    <input type="number" class="opcao" placeholder="Esquerda" id="left">
+                    <input type="text" id="cor" placeholder="Cor do Texto" class="opcao">
+                    <input type="text" id="border" placeholder="Cor da Borda" class="opcao">
+                    <input type="number" id="borderr" placeholder="Curvatura da Borda" class="opcao">
+                    <input type="text" id="margin" placeholder="Margem" class="opcao">
+                    <input type="text" id="background" placeholder="Cor do fundo" class="opcao">
+                </div>
+            </div>
+        </div>
+        <button class="desfazer" onclick="desfazer()">Desfazer</button>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
